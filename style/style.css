@@ -1,0 +1,342 @@
+/*----- Fonts ----*/
+@font-face{
+	font-family:bhoma;
+	src:url(../fonts/BHoma.eot) format('eot'),
+		url(../fonts/BHoma.woff) format('woff'),
+		url(../fonts/BHoma.ttf) format('truetype');
+}
+@font-face{
+	font-family:bmitra;
+	src:url(../fonts/BMitra.eot) format('eot'),
+		url(../fonts/BMitra.woff) format('woff'),
+		url(../fonts/BMitra.ttf) format('truetype'); 
+}
+@font-face{
+	font-family:btitr;
+	src:url(../fonts/BTitrBd.eot) format('eot'),
+		url(../fonts/BTitrBd.woff) format('woff'),
+		url(../fonts/BTitrBd.ttf) format('truetype'); 
+}
+@font-face{
+	font-family:byekan;
+	src:url(../fonts/BYekan.eot) format('eot'),
+		url(../fonts/BYekan.woff) format('woff'),
+		url(../fonts/BYekan.ttf) format('truetype'); 
+}
+@font-face{
+	font-family:impact;
+	src:url(../fonts/impact.eot) format('eot'),
+		url(../fonts/impact.woff) format('woff'),
+		url(../fonts/impact.ttf) format('truetype'); 
+}
+/*----- General Style ----*/
+.backgrand{
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+body{
+	direction: rtl;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e1518+0,212332+99 */
+background: #1e1518; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e1518 0%, #212332 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #1e1518 0%,#212332 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #1e1518 0%,#212332 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1518', endColorstr='#212332',GradientType=0 ); /* IE6-9 */
+
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0;
+	max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: impact;
+}
+.clear{
+	clear: both;
+}
+/*----- Main Style ----*/
+#main{
+	width: 1495px;
+	margin: 0 auto;
+}
+.top-bar{
+	position: relative;
+	margin-right: 3.417%;
+	height:11.37%;
+}
+.socials img{
+	margin: 2.34% 1.17% 0 1.17%;
+	float: right;
+	width: 5.84%;
+}
+.logo img{
+	margin-right: 13.09%;
+	margin-top:1.5%;
+}
+.search {
+	position: absolute;
+	top: 45%;
+	left: 4%
+}
+.search input{
+	width: 200px;
+	height:35px;
+	font-size:20PX;
+	font-family:impact;
+	text-align:center;
+}
+.search a img{
+	position:absolute;
+	left:210px;
+	top: 0px;
+}
+.top-menu{
+	height:81px;
+	position: relative;
+	border-bottom:11px solid #331824;
+}
+.top-menu ul{
+	text-align: right;
+	margin-right:40px
+}
+.top-menu ul li{
+	list-style: none;
+	display: block;
+	float: right;
+	height:82px;
+}
+
+.top-menu ul li a{
+	color:#ff9b21;
+	font-family:btitr;
+	font-size:30px;  
+	line-height: 4;
+	padding-right:30px;
+	padding-left:30px;
+
+}
+.top-menu ul.menu-bar li a:hover{
+	background-color:#083c2f;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top:25px;
+	border-bottom:5px;
+} 
+.top-menu ul li a.home{
+	background-color:#331824;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top:24px; 
+
+}
+.top-menu ul li a.log-in, .top-menu ul li a.sing-in {
+	color:#fff;
+	font-family:byekan;
+	line-height: 2.5;
+}
+.top-menu ul li a.log-in{
+	position: absolute;
+	left:150px;
+	border-left:5px solid #ff9b21;
+	padding-left:10px;
+	height:80px;
+	padding-right:0px;
+}
+.top-menu ul li a.sing-in{
+	position: absolute;
+	left:50px;
+	padding-right:0px;
+	padding-left:0px;
+}
+.slider{
+	height:485px;
+	background: url(../image/slider.png) no-repeat center center;
+	background-size:100% 100%;
+	position: relative;
+}
+.slide-navigation .slide-next{
+	background: url(../image/next.png);
+	height:176px;
+	width:70px;
+	position: absolute;
+	right:5px;
+	top:149px;
+}
+.slide-navigation .slide-perv{
+	background: url(../image/perv.png);
+	height:176px;
+	width:70px;
+	position: absolute;
+	left:5px;
+	top:149px;
+}
+.slider .logo{
+	position: absolute;
+	top:131px;
+	right:39px;
+}
+.slide-select{
+	position: absolute;
+	right:50%;
+	bottom:20px;
+}
+.slide-select li{
+	background:#11880f;
+	width: 15px;
+	height:15px;
+	border-radius:50%;
+	float: right;
+	margin-left:10px;
+}
+.slide-select li a{
+	position: absolute;
+	width: 15px;
+	height:15px;
+}
+.slide-select li a:hover{
+	background:#0341b5;
+	border-radius:50%;
+	opacity:50%;C00000
+}
+.slide-select li a.active{
+	background-color:#ff0000;
+	border-radius:50%;
+}
+.slide-text{
+	float: left;
+	margin:50px 0 0 130px;
+	font-family:impact;
+	width:1059px;
+}
+.slide-text h2{
+	font-size:170px;
+	width:1117px;
+	color:#5a0e37;
+}
+.slide-text p{
+	text-align: left;
+	top:331px;
+	font-size:100px;
+	position: absolute;
+	left:100px; 
+	color:#003735;
+}
+.row3{
+	height:433px;
+}
+
+.madarek{
+	margin-right:100px;
+	margin-top:100px;
+}
+.store{
+	margin-right:560px;
+}
+.music{
+	margin-right:1025px;
+}
+.madarek p{
+	height: 281;
+    width: 316px;
+    font-size: 59px;
+    font-family: bhoma;
+    color:#ff9b21;
+    position: absolute;
+    text-align: center;
+    background:#091e19;
+    border-radius:10px;
+    border-top: 54px solid #091e19;
+    border-right: 32px solid #091e19;
+    border-left:32px solid #091e19;
+    border-bottom: 51px solid #091e19;
+}
+.store p{
+	height: 207px;
+    width: 380px;
+    font-size: 49px;
+    font-family: bhoma;
+    color:#ff9b21;
+    position: absolute;
+    text-align: center;
+    background:#091e19;
+    border-radius:10px;
+    border-top: 113px solid #091e19;
+    
+}
+.music p{
+	height: 241px;
+    width: 380px;
+    font-size: 71px;
+    font-family: impact;
+    color:#ff9b21;
+    position: absolute;
+    text-align: center;
+    background:#091e19;
+    border-radius:10px;
+    border-top: 78px solid #091e19;
+}
+footer{
+	height:160px;
+	text-align: center;
+}
+footer ul{
+	text-align: center;
+	display: inline-block;
+	margin-top:24px;
+}
+footer ul li{
+	display: inline-block;
+	float: right;
+	margin-left:10px;
+	/*border-left:5px solid #ff9b21;*/
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 65px;
+}
+footer ul li a.home{
+	position: absolute;
+	right:389px; 
+	border-left: 5px solid #ff9b21;
+	padding-left:30px;
+}
+footer ul li a.topic{
+	position: absolute;
+	right:525px;
+	border-left: 5px solid #ff9b21;
+	padding-left:30px;
+}
+footer ul li a.shop{
+	position: absolute;
+	right:662px;
+	border-left: 5px solid #ff9b21;
+	padding-left:30px;
+}
+footer ul li a.conect_us{
+	position: absolute;
+	right:805px;
+	border-left: 5px solid #ff9b21;
+	padding-left:30px;
+}
+footer ul li a.about_us{
+	position: absolute;
+	right:1006px;
+}
+footer ul li:last-child{
+	border-left: none;
+}
+footer ul li a{
+	color: #ff9b21;
+	font-family:impact;
+	font-size:31px;
+	height:62px;
+	line-height:2;
+}
+footer .copyright{
+	color:#e3e3e3;
+	margin-top:-5px;
+	font-size:20px;
+}
